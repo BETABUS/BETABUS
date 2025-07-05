@@ -1,178 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>نموذج BETA Premium</title>
-  <style>
-    body {
-      background-color: #0B1D51;
-      color: #F5F0CD;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 30px;
-      line-height: 1.8;
-    }
-    h1, h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .btn {
-      background-color: #F5F0CD;
-      color: #0B1D51;
-      padding: 12px 28px;
-      border: none;
-      border-radius: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      display: inline-block;
-      margin: 15px auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background-color: #d3cca6;
-      transform: scale(1.05);
-    }
-    section {
-      margin: 40px 0;
-    }
-    table {
-      width: 100%;
-      text-align: center;
-      border-collapse: collapse;
-    }
-    td, th {
-      border: 1px solid #F5F0CD;
-      padding: 10px;
-    }
-    input, button {
-      margin-top: 10px;
-    }
-    .social a {
-      color: #F5F0CD;
-      text-decoration: underline;
-    }
-    .sticky {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 100;
-    }
-  </style>
-</head>
-<body>
-
-<h1>نموذج BETA Premium</h1>
-
-<section>
-  <p>نموذج تفاعلي يعلمك كل أسرار الإنستغرام خطوة بخطوة مع مساعد ذكي يجاوبك. السعر: <strong>50,000 دينار عراقي</strong></p>
-  <a class="btn" href="https://wa.me/9647731631555" target="_blank">اشترك الآن عبر واتساب</a>
-</section>
-
-<section id="learn">
-  <h2>شنو راح تتعلم؟</h2>
-  <ul>
-    <li>🧠 فهم خوارزميات الانستغرام</li>
-    <li>🎥 إنشاء محتوى جذاب وتفاعلي</li>
-    <li>📝 كتابة بوستات وفيديوهات ترند</li>
-    <li>📈 زيادة التفاعل والمشاهدات</li>
-    <li>💡 أدوات وPDFات حصرية</li>
-  </ul>
-</section>
-
-<section id="tools">
-  <h2>Beta Tools Kit 📦</h2>
-  <p>المشترك راح يحصل على:</p>
-  <ul>
-    <li>ملفات PDF تعليمية</li>
-    <li>قوالب جاهزة للمحتوى</li>
-    <li>قوائم مراجعة تفاعلية</li>
-    <li>مساعد مطلق ذكي داخل المنصة</li>
-  </ul>
-</section>
-
-<section id="countdown">
-  <h2>عرض خاص لفترة محدودة!</h2>
-  <p id="timer"></p>
-</section>
-
-<script>
-  const countDownDate = new Date("Jul 7, 2025 23:59:59").getTime();
-  const x = setInterval(function () {
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
-    const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const s = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("timer").innerHTML = `${d} يوم ${h} ساعة ${m} دقيقة ${s} ثانية`;
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("timer").innerHTML = "انتهى العرض!";
-    }
-  }, 1000);
-</script>
-
-<section id="testimonials">
-  <h2>آراء مشتركين</h2>
-  <p>🔥 "أفضل تجربة تعلمت بيها الانستغرام!"</p>
-  <p>⭐ "النموذج يجاوبني بسرعة ويخليني أطبق فوراً!"</p>
-  <p>🎯 "أنصح بيه كل واحد يريد يتعلم بصدق!"</p>
-</section>
-
-<section id="comparison">
-  <h2>قبل وبعد الاشتراك</h2>
-  <table>
-    <tr><th>قبل</th><th>بعد</th></tr>
-    <tr><td>بوستات عشوائية</td><td>محتوى احترافي</td></tr>
-    <tr><td>تفاعل ضعيف</td><td>زيادة التفاعل والمتابعين</td></tr>
-    <tr><td>ضياع بالخطوات</td><td>نموذج موجه خطوة بخطوة</td></tr>
-  </table>
-</section>
-
-<section id="faq">
-  <h2>الأسئلة الشائعة</h2>
-  <p><strong>هل أحتاج خبرة؟</strong> لا أبدًا، النموذج يشرحلك كلشي من الصفر.</p>
-  <p><strong>شلون أتعامل ويا النموذج؟</strong> بس تضغط، يشرح ويسألك ويقيس مستواك.</p>
-  <p><strong>أكو دعم؟</strong> نعم، دعم دائم واتساب بعد الاشتراك.</p>
-</section>
-
-<section id="trust">
-  <h2>الأمان والدعم</h2>
-  <p>🔒 كل معلوماتك محفوظة وآمنة</p>
-  <p>📞 دعم واتساب بعد الاشتراك</p>
-</section>
-
-<section id="form">
-  <h2>سجل اهتمامك</h2>
-  <form>
-    <input type="text" placeholder="اسمك" />
-    <input type="email" placeholder="إيميلك" />
-    <button class="btn" type="submit">أريد الانضمام</button>
-  </form>
-</section>
-
-<section class="social">
-  <h2>تابعنا وتواصل</h2>
-  <a href="https://wa.me/9647731631555" target="_blank">واتساب</a> | 
-  <a href="https://instagram.com/hosni.jameel" target="_blank">انستغرام</a>
-</section>
-
-<div class="sticky">
-  <a class="btn" href="https://wa.me/9647731631555">اشترك الآن</a>
-</div>
-
-<script>
-  if (navigator.share) {
-    const shareBtn = document.createElement("button");
-    shareBtn.innerText = "شارك الصفحة";
-    shareBtn.className = "btn";
-    shareBtn.onclick = () => {
-      navigator.share({ title: "نموذج BETA", url: window.location.href });
-    };
-    document.body.appendChild(shareBtn);
-  }
-</script>
-
-</body>
-</html>
